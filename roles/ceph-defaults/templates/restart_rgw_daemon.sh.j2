@@ -1,5 +1,7 @@
 #!/bin/bash
 
+[[ "{{ handler_health_rgw_restart }}" == "false" ]] && exit 0
+
 RETRIES="{{ handler_health_rgw_check_retries }}"
 DELAY="{{ handler_health_rgw_check_delay }}"
 RGW_NAME="{{ ansible_hostname }}"

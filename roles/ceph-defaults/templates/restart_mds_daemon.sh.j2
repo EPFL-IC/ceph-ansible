@@ -1,5 +1,7 @@
 #!/bin/bash
 
+[[ "{{ handler_health_mds_restart }}" == "false" ]] && exit 0
+
 RETRIES="{{ handler_health_mds_check_retries }}"
 DELAY="{{ handler_health_mds_check_delay }}"
 MDS_NAME="{{ ansible_hostname }}"

@@ -382,31 +382,38 @@ dummy:
 # for both monitors and osds.
 #
 # Monitor handler checks
+#handler_health_mon_restart : true
 #handler_health_mon_check_retries: 5
 #handler_health_mon_check_delay: 10
 #
 # OSD handler checks
+#handler_health_osd_restart : true
 #handler_health_osd_check_retries: 40
 #handler_health_osd_check_delay: 30
 #handler_health_osd_check: true
 #
 # MDS handler checks
+#handler_health_mds_restart : true
 #handler_health_mds_check_retries: 5
 #handler_health_mds_check_delay: 10
 #
 # RGW handler checks
+#handler_health_rgw_restart : true
 #handler_health_rgw_check_retries: 5
 #handler_health_rgw_check_delay: 10
 
 # NFS handler checks
+#handler_health_nfs_restart : true
 #handler_health_nfs_check_retries: 5
 #handler_health_nfs_check_delay: 10
 
 # RBD MIRROR handler checks
+#handler_health_rbd_restart : true
 #handler_health_rbd_mirror_check_retries: 5
 #handler_health_rbd_mirror_check_delay: 10
 
 # MGR handler checks
+#handler_health_mgr_restart : true
 #handler_health_mgr_check_retries: 5
 #handler_health_mgr_check_delay: 10
 

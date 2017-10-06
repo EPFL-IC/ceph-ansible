@@ -1,5 +1,7 @@
 #!/bin/bash
 
+[[ "{{ handler_health_rbd_restart }}" == "false" ]] && exit 0
+
 RETRIES="{{ handler_health_rbd_mirror_check_retries }}"
 DELAY="{{ handler_health_rbd_mirror_check_delay }}"
 RBD_MIRROR_NAME="{{ ansible_hostname }}"

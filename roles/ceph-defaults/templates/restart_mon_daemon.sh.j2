@@ -1,5 +1,7 @@
 #!/bin/bash
 
+[[ "{{ handler_health_mon_restart }}" == "false" ]] && exit 0
+
 RETRIES="{{ handler_health_mon_check_retries }}"
 DELAY="{{ handler_health_mon_check_delay }}"
 MONITOR_NAME="{{ monitor_name }}"
